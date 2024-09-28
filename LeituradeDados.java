@@ -5,26 +5,24 @@ public class LeituradeDados {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Digite seu nome:");
-        String nome = scan.nextLine();  // Lê o nome
+        String nome = scan.nextLine();  
 
         System.out.println("Digite sua idade:");
-        int idade = scan.nextInt();  // Lê a idade
+        int idade = scan.nextInt();  
 
         System.out.println("Digite sua altura:");
-        float altura = scan.nextFloat();  // Lê a altura
+        float altura = scan.nextFloat();  
 
-        // Consumir a nova linha restante antes de ler a próxima string ou boolean
-        scan.nextLine();  // Limpa o buffer
+        scan.nextLine();  
 
         System.out.println("Você tem animal de estimação? (true/false)");
-        boolean temPet = scan.nextBoolean();  // Lê o boolean
+        boolean temPet = scan.nextBoolean();  
 
-        // Exibir os dados coletados
         System.out.println("\nSeu nome é: " + nome);
         System.out.println("Sua idade é: " + idade);
         System.out.println("Sua altura é: " + altura);
         System.out.println("Tem pet: " + temPet);
 
-        scan.close();  // Fechar o Scanner após o uso
+        scan.close();  
     }
 }
